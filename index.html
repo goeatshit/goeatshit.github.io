@@ -16,6 +16,17 @@
                 Header set X-Frame-Options "deny"
                 Header always set X-Frame-Options "sameorigin"
                 Header set X-Frame-Options "allow from https://y.qq.com/n/m/detail/mv/index.html?vid=m0020hjdcx5"
+                <system.webServer>
+  ...
+
+  <httpProtocol>
+    <customHeaders>
+      <add name="X-Frame-Options" value="sameorigin" />
+    </customHeaders>
+  </httpProtocol>
+
+  ...
+</system.webServer>
                 
                       
 </center>.
