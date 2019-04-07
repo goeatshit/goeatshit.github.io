@@ -74,12 +74,18 @@
        border-style: solid;
        border-color: black; 
        color:black;
-       
           
 }
       .thick-black-border:hover{
         background : url('http://www.xhj123.com/img_gaoxiao/20190219/6/20190219160351669.gif');
-        border-color:rgba(0,0,0,0.1);
+        @keyframes color_up {
+    from {
+        border-color: rgba(0,0,0,0.2);
+    }
+    to {
+        border-color: rgba(0,255,0,0.4);
+    }
+}
         
         
       }
